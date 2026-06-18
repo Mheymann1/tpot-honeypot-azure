@@ -204,9 +204,12 @@ The VM was hardened after deployment using manual control verification mapped to
 
 ```
 tpot-honeypot-azure/
-├── README.md                        ← This file
+├── README.md                              ← This file
+├── POAM.md                                ← POA&M documentation
 ├── hardening/
-│   └── HARDENING.md                 ← Full NIST SP 800-53 hardening report
+│   └── HARDENING.md                       ← Full NIST SP 800-53 hardening report
+├── docs/
+│   └── FedRAMP-POAM-TpotHoneypot.xlsx    ← FedRAMP POA&M template
 └── screenshots/
     ├── 01-azure-vm-overview.png
     ├── 02-azure-nsg-rules.png
