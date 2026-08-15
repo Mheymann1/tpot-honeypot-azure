@@ -198,6 +198,8 @@ The VM was hardened after deployment using manual control verification mapped to
 📄 **Full hardening documentation with all commands, findings, and accepted risk statements:**
 👉 [`hardening/HARDENING.md`](hardening/HARDENING.md)
 
+📋 **Nessus Vulnerability Scan Results:** [`scans/`](scans/) — Credentialed scan (June 3, 2026). Auth: Pass. 78 findings analyzed. All Critical/Medium findings traced to intentional honeypot services. Zero host OS vulnerabilities at Critical or Medium severity.
+
 ---
 
 ## Repository Structure
@@ -210,6 +212,15 @@ tpot-honeypot-azure/
 │   └── HARDENING.md                       ← Full NIST SP 800-53 hardening report
 ├── docs/
 │   └── FedRAMP-POAM-TpotHoneypot.xlsx    ← FedRAMP POA&M template
+├── scans/
+│   ├── nessus-01-scan-summary.png         ← Auth Pass, 78 findings, 39 min
+│   ├── nessus-02-vulnerability-list.png   ← Full 78 findings table
+│   ├── nessus-03-rescan.png               ← Scan 2, 57 findings
+│   ├── nessus-04-telnet.png               ← CVSS 6.5 Telnet detail
+│   ├── nessus-05-critical-mssql.png       ← CVSS 10.0 MSSQL finding
+│   ├── nessus-06-critical-elasticsearch.png ← CVSS 9.8 Elasticsearch finding
+│   ├── nessus-07-webconfig.png            ← CVSS 5.3 web.config finding
+│   └── nessus-08-jwalk.png                ← CVSS 5.0 J Walk finding
 └── screenshots/
     ├── 01-azure-vm-overview.png
     ├── 02-azure-nsg-rules.png
