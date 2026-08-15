@@ -210,8 +210,13 @@ tpot-honeypot-azure/
 ├── POAM.md                                ← POA&M documentation
 ├── hardening/
 │   └── HARDENING.md                       ← Full NIST SP 800-53 hardening report
+├── rmf-compliance/
+│   ├── SSP.md                             ← System Security Plan
+│   ├── SAP.md                             ← Security Assessment Plan
+│   ├── SAR.md                             ← Security Assessment Report
+│   └── Executive-Report.md                ← Leadership/AO summary report
 ├── docs/
-│   └── FedRAMP-POAM-TpotHoneypot.xlsx    ← FedRAMP POA&M template
+│   └── FedRAMP-POAM-TpotHoneypot.xlsx     ← FedRAMP POA&M template
 ├── scans/
 │   ├── nessus-01-scan-summary.png         ← Auth Pass, 78 findings, 39 min
 │   ├── nessus-02-vulnerability-list.png   ← Full 78 findings table
