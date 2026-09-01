@@ -305,22 +305,6 @@ This POA&M documents all findings identified during security assessment of the T
 
 ---
 
-## Interview Talking Points
-
-When asked to explain this POA&M in a federal interview:
-
-**"How did you identify these findings?"**
-> "I used two methods — a credentialed Nessus vulnerability scan that authenticated to the system via SSH key with sudo escalation, and manual CIS Level 2 control verification mapped to NIST SP 800-53 Rev. 5. Using both gave me coverage across CVEs and configuration weaknesses."
-
-**"Why are there so many accepted risks?"**
-> "The system is a honeypot by design. Every Critical and Medium finding from Nessus traced back to intentional honeypot services — Dionaea emulating SQL Server, Elasticpot emulating vulnerable Elasticsearch, Cowrie emulating Telnet. These aren't misconfigurations — they're the system working as intended. Accepting the risk with documented justification and compensating controls is the correct RMF decision, not remediating them."
-
-**"What compensating controls did you apply?"**
-> "Every accepted risk has compensating controls documented — UFW default-deny protecting the host OS management plane, fail2ban blocking SSH brute force, auditd logging all privileged activity, and the T-Pot ELK stack providing full visibility into all honeypot traffic. The attack surface is intentional but monitored."
-
-**"What did you actually remediate?"**
-> "Eight findings were closed — account lockout via PAM faillock, password aging policy, auditd installation with custom rules, UFW activation with proper rule sequencing, fail2ban deployment, and ICMP redirect hardening. All remediations are verified with evidence."
-
 ---
 
 *POA&M prepared by [@marcusheymann](https://www.linkedin.com/in/mheymann1) | OT/ICS Cybersecurity Analyst*
